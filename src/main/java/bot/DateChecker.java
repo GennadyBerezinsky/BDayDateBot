@@ -6,6 +6,7 @@ package bot;
 
 import java.sql.*;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 public class DateChecker {
@@ -16,8 +17,8 @@ public class DateChecker {
     public void newDate(String userID, String firstName, String dateString, String chatID) throws ClassNotFoundException, SQLException {
             boolean flag = false;
             String userName = "root";
-            String password = "***"; //password was removed
-            String connectionURL = "***";//connection URL was removed
+        String password = "***"; //password was removed
+        String connectionURL = "***";//connection URL was removed
             java.lang.Class.forName("com.mysql.jdbc.Driver");
 
             String valdates = userID + ", " + dateString;
@@ -31,14 +32,53 @@ public class DateChecker {
             }
     }
 
+    public void runChecker(){
+        Date thisDate = new Date();
+        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM -yyyy");
+        String today = sdf.format(thisDate);
+        boolean flag = true;
+        try {
+            Thread.sleep(3000);
+            Date date = new Date();
+            String check = sdf.format(date);
+            System.out.println(today);
+            System.out.println(check);
+            if(check.equals(today)){
+                System.out.println("date ok");
+                flag = true;
+            }
+            if(flag && check.equals(today)){
+
+
+                System.out.println("checking date");
+                this.checkDate();
+
+                Calendar c = Calendar.getInstance();
+                c.setTime(thisDate);
+                c.add(Calendar.DATE, 1);
+                thisDate = c.getTime();
+                today = sdf.format(thisDate);
+
+                flag = false;
+
+            }
+        } catch (InterruptedException e){
+            System.out.println(e.getMessage());
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
     public void checkDate() throws ClassNotFoundException, SQLException {
         Date date = new Date();
         SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy");
         date.setTime(date.getTime());
         String today = format.format(date).toString();
         String userName = "root";
-        String password = "***";//password was removed
-        String connectionURL = "***"; //connection URL was removed
+        String password = "***"; //password was removed
+        String connectionURL = "***";//connection URL was removed
         java.lang.Class.forName("com.mysql.jdbc.Driver");
 
 
