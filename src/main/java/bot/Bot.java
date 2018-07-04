@@ -13,14 +13,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.sql.SQLException;
 
-public class Bot extends TelegramLongPollingBot {
+public class Bot extends TelegramLongPollingBot implements ConstStrings{
+    //Inteface ConstStrings contains some contants such as bot token, passwords from database, etg..
 
-    private String token = "***"; // token was removed
-    private String bot_name = "BDayDateBot";
-
-
-
-        public void onUpdateReceived(Update update) {
+    public void onUpdateReceived(Update update) {
         log("LOG --> " + update.getMessage().getFrom().getFirstName() + " "
                 + update.getMessage().getFrom().getId() + " " + +update.getMessage().getChatId() + " : " + update.getMessage().getText());
         String chat = update.getMessage().getChatId().toString();

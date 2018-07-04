@@ -9,16 +9,12 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-public class DateChecker {
-
-
-
+public class DateChecker implements ConstStrings {
+    //Inteface ConstStrings contains some contants such as bot token, passwords from database, etg..
 
     public void newDate(String userID, String firstName, String dateString, String chatID) throws ClassNotFoundException, SQLException {
             boolean flag = false;
-            String userName = "root";
-        String password = "***"; //password was removed
-        String connectionURL = "***";//connection URL was removed
+
             java.lang.Class.forName("com.mysql.jdbc.Driver");
 
             String valdates = userID + ", " + dateString;
@@ -76,12 +72,7 @@ public class DateChecker {
         SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy");
         date.setTime(date.getTime());
         String today = format.format(date).toString();
-        String userName = "root";
-        String password = "***"; //password was removed
-        String connectionURL = "***";//connection URL was removed
         java.lang.Class.forName("com.mysql.jdbc.Driver");
-
-
         try(Connection connection = DriverManager.getConnection(connectionURL, userName, password);
             Statement statement = connection.createStatement()){
                 ResultSet rs = statement.executeQuery("select * from dates");
