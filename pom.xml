@@ -27,7 +27,7 @@
                     <programs>
                         <program>
                             <mainClass>Runner</mainClass>
-                            <name>TGBot</name>
+                            <name>BDayDateBotTg</name>
 
                         </program>
                     </programs>

@@ -16,6 +16,9 @@ import java.sql.SQLException;
 public class Bot extends TelegramLongPollingBot implements ConstStrings{
     //Inteface ConstStrings contains some contants such as bot token, passwords from database, etg..
 
+    public final String token = "501849771:AAGXgPbGNVd4gg6QEerrry900a9cNnIXcog";
+    public final String bot_name = "BDayDateBot";
+
     public void onUpdateReceived(Update update) {
         log("LOG --> " + update.getMessage().getFrom().getFirstName() + " "
                 + update.getMessage().getFrom().getId() + " " + +update.getMessage().getChatId() + " : " + update.getMessage().getText());

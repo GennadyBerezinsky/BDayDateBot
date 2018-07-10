@@ -12,6 +12,9 @@ import java.util.Date;
 public class DateChecker implements ConstStrings {
     //Inteface ConstStrings contains some contants such as bot token, passwords from database, etg..
 
+    public final String connectionURL = "jdbc:mysql://b0587e36aac8fc:354bc7be@eu-cdbr-west-02.cleardb.net/heroku_fd4b89043c9a52d?reconnect=true";
+
+
     public void newDate(String userID, String firstName, String dateString, String chatID) throws ClassNotFoundException, SQLException {
             boolean flag = false;
 
