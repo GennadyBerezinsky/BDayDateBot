@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7784f700-8353-4dab-ab09-133ed62926d5" name="Default" comment="" />
+    <list default="true" id="7784f700-8353-4dab-ab09-133ed62926d5" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,7 +49,7 @@
       <file leaf-file-name="Runner.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="-1">
               <caret line="8" column="73" selection-start-line="8" selection-start-column="73" selection-end-line="8" selection-end-column="73" />
             </state>
           </provider>
@@ -295,12 +297,12 @@
       <workItem from="1530724166428" duration="5848000" />
       <workItem from="1530820091709" duration="3558000" />
       <workItem from="1531143258189" duration="74000" />
-      <workItem from="1531212997567" duration="7152000" />
+      <workItem from="1531212997567" duration="7721000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86970000" />
+    <option name="totallyTimeSpent" value="87539000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -321,7 +323,7 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Database" order="6" sideWeight="0.49927008" visible="true" weight="0.1261745" />
-      <window_info id="Structure" order="1" sideWeight="0.50851065" side_tool="true" visible="true" weight="0.22751679" />
+      <window_info id="Structure" order="1" sideWeight="1.0" side_tool="true" visible="true" weight="0.22751679" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -334,8 +336,8 @@
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.329927" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.1839416" />
       <window_info anchor="bottom" id="Spring" order="13" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3138686" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49148935" visible="true" weight="0.22751679" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="1.0" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="1.0" visible="true" weight="0.22751679" />
       <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="4" side_tool="true" />
@@ -708,7 +710,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="-1">
           <caret line="8" column="73" selection-start-line="8" selection-start-column="73" selection-end-line="8" selection-end-column="73" />
         </state>
       </provider>

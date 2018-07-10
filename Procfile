@@ -1,1 +1,1 @@
-web: java Runner.java
+bot: java src\main\java\Runner.java
