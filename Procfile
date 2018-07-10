@@ -1,1 +1,1 @@
-bot: java Runner.java
+web: java Runner.java
