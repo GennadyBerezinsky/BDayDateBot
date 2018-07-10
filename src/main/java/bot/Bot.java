@@ -13,7 +13,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.sql.SQLException;
 
-public class Bot extends TelegramLongPollingBot implements ConstStrings{
+public class Bot extends TelegramLongPollingBot {
     //Inteface ConstStrings contains some contants such as bot token, passwords from database, etg..
 
     public final String token = "501849771:AAGXgPbGNVd4gg6QEerrry900a9cNnIXcog";
