@@ -1,1 +1,1 @@
-bot: java src\main\java\Runner.java
+worker: sh target/bin/BDayDateBotTG
