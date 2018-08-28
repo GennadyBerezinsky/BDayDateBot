@@ -8,6 +8,7 @@ import java.sql.*;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.logging.Logger;
 
 public class DateChecker implements ConstStrings  {
     //Inteface ConstStrings contains some contants such as bot token, passwords from database, etg..
@@ -24,7 +25,7 @@ public class DateChecker implements ConstStrings  {
                 Statement statement = connection.createStatement()){
                 statement.executeUpdate("insert into dates (UserID, Date, UserName, ChatID) VALUES ('" + userID +
                         "', '"+dateString+"', '"+firstName+"' , '" + chatID + "')");
-                System.out.println("LOG: insert compleate");
+                Logger.getGlobal().info("Insert compleate.");
             }
     }
 
@@ -54,9 +55,7 @@ public class DateChecker implements ConstStrings  {
                 c.add(Calendar.DATE, 1);
                 thisDate = c.getTime();
                 today = sdf.format(thisDate);
-
                 flag = false;
-
             }
         } catch (InterruptedException e){
             System.out.println(e.getMessage());

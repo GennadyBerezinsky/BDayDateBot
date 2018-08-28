@@ -12,6 +12,7 @@ import org.telegram.telegrambots.exceptions.TelegramApiException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.logging.Logger;
 
 public class Bot extends TelegramLongPollingBot implements ConstStrings {
     //Interface ConstStrings contains some contants such as bot token, passwords from database, etg..
@@ -19,8 +20,10 @@ public class Bot extends TelegramLongPollingBot implements ConstStrings {
 
 
     public void onUpdateReceived(Update update) {
-        log("LOG --> " + update.getMessage().getFrom().getFirstName() + " "
+
+        Logger.getGlobal().info("LOG --> " + update.getMessage().getFrom().getFirstName() + " "
                 + update.getMessage().getFrom().getId() + " " + +update.getMessage().getChatId() + " : " + update.getMessage().getText());
+
         String chat = update.getMessage().getChatId().toString();
         boolean flag = true;
         DateChecker dateChecker = new DateChecker();
@@ -66,16 +69,6 @@ public class Bot extends TelegramLongPollingBot implements ConstStrings {
             default:
                 sendMsg(update.getMessage().getChatId().toString(), "WAT?");
                 break;
-        }
-    }
-
-    public void log(String log)  {
-        try {
-            FileWriter fw = new FileWriter("LOG.txt");
-            fw.write(log);
-            fw.close();
-        } catch (IOException e) {
-            e.printStackTrace();
         }
     }
 
