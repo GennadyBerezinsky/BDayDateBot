@@ -1,2 +1,1 @@
-LOG --> Gennady 186395764 186395764 : /add_date 29-06-1998
-//not a log
+LOG --> Gennady 186395764 186395764 : /add_date 25-08-1998

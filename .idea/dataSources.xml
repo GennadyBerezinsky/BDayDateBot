@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="@localhost" uuid="a857d52f-247b-40e9-88a8-5cd4c2fea668">
+    <data-source source="LOCAL" name="botdb@localhost" uuid="a857d52f-247b-40e9-88a8-5cd4c2fea668">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/botdb</jdbc-url>
       <driver-properties>
         <property name="autoReconnect" value="true" />
         <property name="zeroDateTimeBehavior" value="convertToNull" />
@@ -15,11 +15,11 @@
         <property name="yearIsDateType" value="false" />
       </driver-properties>
     </data-source>
-    <data-source source="LOCAL" name="BDayDateBot_DATABASE@localhost" uuid="a6d6f642-61ff-4284-a082-812ec85c991d">
+    <data-source source="LOCAL" name="BOTDB@93.74.153.92" uuid="a6d6f642-61ff-4284-a082-812ec85c991d">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/BDayDateBot_DATABASE</jdbc-url>
+      <jdbc-url>jdbc:mysql://93.74.153.92:19997/BOTDB</jdbc-url>
       <driver-properties>
         <property name="autoReconnect" value="true" />
         <property name="zeroDateTimeBehavior" value="convertToNull" />

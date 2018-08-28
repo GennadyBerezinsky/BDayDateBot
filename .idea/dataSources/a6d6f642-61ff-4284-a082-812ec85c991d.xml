@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="BDayDateBot_DATABASE@localhost">
+<dataSource name="BOTDB@93.74.153.92">
   <database-model serializer="dbm" rdbms="MYSQL" format-version="4.9">
     <root id="1">
       <ServerVersion>5.7.21</ServerVersion>

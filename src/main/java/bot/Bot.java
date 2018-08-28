@@ -13,11 +13,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.sql.SQLException;
 
-public class Bot extends TelegramLongPollingBot {
-    //Inteface ConstStrings contains some contants such as bot token, passwords from database, etg..
+public class Bot extends TelegramLongPollingBot implements ConstStrings {
+    //Interface ConstStrings contains some contants such as bot token, passwords from database, etg..
 
-    public final String token = "501849771:AAGXgPbGNVd4gg6QEerrry900a9cNnIXcog";
-    public final String bot_name = "BDayDateBot";
+
 
     public void onUpdateReceived(Update update) {
         log("LOG --> " + update.getMessage().getFrom().getFirstName() + " "
@@ -41,11 +40,11 @@ public class Bot extends TelegramLongPollingBot {
 
         switch (message) {
             case "/start":
-                sendMsg(chat, "Драсте");
+                sendMsg(chat, "Hello!");
                 break;
             case "/add_date":
                 if(flag){
-                    sendMsg(chat, "понял-принял, ваша дата " + dateText);
+                    sendMsg(chat, "okey, your date is " + dateText);
                     try {
                         dateChecker.newDate(update.getMessage().getFrom().getId().toString(),
                                 update.getMessage().getFrom().getFirstName(),
@@ -57,7 +56,7 @@ public class Bot extends TelegramLongPollingBot {
                     }
                 }
                 else {
-                    sendMsg(chat, "Ошибка ввода даты, необходимый формат даты: дд-мм-гггг!");
+                    sendMsg(chat, "Exception: date input error! Please input date in format dd-MM-yyyy! ");
                 }
                 break;
             case "/me":
@@ -65,7 +64,7 @@ public class Bot extends TelegramLongPollingBot {
                         " " + update.getMessage().getFrom().toString());
                 break;
             default:
-                sendMsg(update.getMessage().getChatId().toString(), "шо ты сказал?");
+                sendMsg(update.getMessage().getChatId().toString(), "WAT?");
                 break;
         }
     }
